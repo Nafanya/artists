@@ -62,8 +62,10 @@ public class ArtistDetailActivity extends AppCompatActivity implements ArtistDet
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         presenter = new ArtistDetailPresenterImpl(
                 ThreadExecutor.getInstance(),
@@ -93,7 +95,9 @@ public class ArtistDetailActivity extends AppCompatActivity implements ArtistDet
 
     @Override
     public void showArtist(Artist artist) {
-        getSupportActionBar().setTitle(artist.getName());
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(artist.getName());
+        }
         artistBio.setText(artist.getDescription());
         artistGenres.setText(artist.getAllGenres());
         artistSongsAlbums.setText(String.format(getString(R.string.songs_albums_format), artist.getTracks(), artist.getAlbums()));

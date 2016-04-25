@@ -94,8 +94,10 @@ public class ArtistsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onClickView(int position) {
-        final long artistId = artists.get(position).getId();
-        view.onArtistClicked(artistId);
+        if (position >= 0 && artists != null && position < artists.size()) {
+            final long artistId = artists.get(position).getId();
+            view.onArtistClicked(artistId);
+        }
     }
 
     public void addNewArtists(List<Artist> newArtists) {
