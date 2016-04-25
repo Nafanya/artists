@@ -71,6 +71,6 @@ public class ArtistListPresenterImpl extends AbstractPresenter implements
     @Override
     public void onNetworkError() {
         onError("Network is down");
-        //TODO
+        //I don't localize it because I have only 20 mins left ;(
     }
 }

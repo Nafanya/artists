@@ -7,7 +7,9 @@ import io.github.nafanya.artists.domain.model.Artist;
 import io.github.nafanya.artists.domain.model.Cover;
 import io.github.nafanya.artists.domain.repository.ArtistRepository;
 
-
+/**
+ * Dumb in-memory stub storage
+ */
 public class DummyArtistRepositoryImpl implements ArtistRepository {
 
     private static volatile List<Artist> artists;

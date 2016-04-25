@@ -1,12 +1,9 @@
 package io.github.nafanya.artists.presentation.presenters.impl;
 
 
-import java.util.List;
-
 import io.github.nafanya.artists.domain.executor.Executor;
 import io.github.nafanya.artists.domain.executor.MainThread;
 import io.github.nafanya.artists.domain.interactors.GetArtistDetailInteractor;
-import io.github.nafanya.artists.domain.interactors.GetArtistsInteractor;
 import io.github.nafanya.artists.domain.interactors.base.AbstractInteractor;
 import io.github.nafanya.artists.domain.interactors.impl.GetArtistDetailInteractorImpl;
 import io.github.nafanya.artists.domain.model.Artist;
@@ -45,7 +42,7 @@ public class ArtistDetailPresenterImpl extends AbstractPresenter implements
     @Override
     public void onNetworkError() {
         onError("Network is down");
-        //TODO
+        //I don't localize it because I have only 20 mins left ;(
     }
 
     @Override

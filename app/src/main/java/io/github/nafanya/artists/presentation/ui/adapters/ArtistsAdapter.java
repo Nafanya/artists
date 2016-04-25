@@ -101,12 +101,15 @@ public class ArtistsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     public void addNewArtists(List<Artist> newArtists) {
+        int itemsBefore = 0;
         if (artists != null) {
+            itemsBefore = artists.size();
             artists.clear();
+            notifyItemRangeRemoved(0, itemsBefore);
         }
         if (newArtists != null) {
             artists.addAll(newArtists);
+            notifyItemRangeInserted(0, newArtists.size());
         }
-        notifyDataSetChanged();
     }
 }
