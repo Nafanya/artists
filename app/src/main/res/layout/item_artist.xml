@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/item_artist_height"
+    android:background="?selectableItemBackground">
+    
+    <ImageView
+        android:layout_width="@dimen/item_artist_image_width"
+        android:layout_height="@dimen/item_artist_image_height"
+        android:id="@+id/image_artist"
+        android:contentDescription="@string/artist"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="@dimen/item_artist_margin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/item_artist_margin"
+        android:paddingLeft="@dimen/item_artist_margin"
+        android:layout_toRightOf="@+id/image_artist"
+        android:layout_toEndOf="@+id/image_artist">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist_name"
+            android:layout_marginBottom="@dimen/item_artist_divider_margin"
+            android:text="Tove Lo"
+            style="@style/TextHeadline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist_genres"
+            android:layout_marginBottom="@dimen/item_artist_divider_margin"
+            android:text="Pop, Rap"
+            style="@style/TextSubHeadline"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist_songs_albums"
+            android:text="131 songs, 10 albums"
+            style="@style/TextSubHeadline" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

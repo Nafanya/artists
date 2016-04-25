@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextHeadline">
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">@dimen/m_text_headline</item>
+        <item name="android:textColor">@color/m_app_primary_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">start</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextSubHeadline" parent="TextHeadline">
+        <item name="android:textSize">@dimen/m_text_subheadline</item>
+        <item name="android:textColor">@color/m_app_secondary_text</item>
+    </style>
+
+    <style name="TextBody">
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">@dimen/m_text_body</item>
+        <item name="android:textColor">@color/m_app_primary_text</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
