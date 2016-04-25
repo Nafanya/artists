@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.annimon.stream.Collectors;
-import com.annimon.stream.Stream;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
