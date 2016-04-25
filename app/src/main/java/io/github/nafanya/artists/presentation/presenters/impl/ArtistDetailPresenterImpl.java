@@ -44,7 +44,7 @@ public class ArtistDetailPresenterImpl extends AbstractPresenter implements
 
     @Override
     public void onNetworkError() {
-        onError("Network unavailable");
+        onError("Network is down");
         //TODO
     }
 

@@ -98,6 +98,6 @@ public class ArtistListActivity extends AppCompatActivity implements ArtistListP
 
     @Override
     public void showError(String message) {
-        Snackbar.make(refreshLayout, message, Snackbar.LENGTH_SHORT);
+        Snackbar.make(refreshLayout, message, Snackbar.LENGTH_SHORT).show();
     }
 }

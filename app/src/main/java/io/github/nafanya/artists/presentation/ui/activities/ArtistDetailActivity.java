@@ -21,7 +21,6 @@ import io.github.nafanya.artists.domain.model.Artist;
 import io.github.nafanya.artists.presentation.presenters.ArtistDetailPresenter;
 import io.github.nafanya.artists.presentation.presenters.impl.ArtistDetailPresenterImpl;
 import io.github.nafanya.artists.storage.ArtistRepositoryImpl;
-import io.github.nafanya.artists.storage.DummyArtistRepositoryImpl;
 
 public class ArtistDetailActivity extends AppCompatActivity implements ArtistDetailPresenter.View {
 
@@ -118,6 +117,6 @@ public class ArtistDetailActivity extends AppCompatActivity implements ArtistDet
 
     @Override
     public void showError(String message) {
-        Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_SHORT);
+        Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_SHORT).show();
     }
 }

@@ -70,7 +70,7 @@ public class ArtistListPresenterImpl extends AbstractPresenter implements
 
     @Override
     public void onNetworkError() {
-        onError("Network");
+        onError("Network is down");
         //TODO
     }
 }
